@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'fack'
+fack = Fack.new
+fack.help
