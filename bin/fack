@@ -4,5 +4,5 @@ fack = Fack.new
 if (ARGV.size < 1)
   fack.help
 else
-  fack.find_file("./", ARGV[0])
+  fack.print_find("./", ARGV[0])
 end
