@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
 require 'fack'
 fack = Fack.new
-fack.help
+if (ARGV.size < 1)
+  fack.help
+else
+  fack.find_file("./", ARGV[0])
+end

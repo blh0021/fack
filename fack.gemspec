@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://www.benharrington.com'
   s.license     = 'MIT'
 
-  s.files       = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  s.executables = %w(fack)
+  s.files       = ["lib/fack.rb", "bin/fack"]
+  s.executables << 'fack' 
   s.require_paths = ["lib"]
 end
