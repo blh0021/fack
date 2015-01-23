@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'fack'
-  s.version     = '0.0.1'
-  s.date        = '2014-01-22'
+  s.version     = '0.0.2'
+  s.date        = Time.now.strftime("%Y-%m-%d")
   s.summary     = "Fack"
   s.description = "Fack is a simple gem for finding files within a path."
   s.authors     = ["Ben Harrington"]
@@ -13,4 +13,6 @@ Gem::Specification.new do |s|
   s.files       = ["lib/fack.rb", "bin/fack"]
   s.executables << 'fack' 
   s.require_paths = ["lib"]
+
+  s.add_runtime_dependency 'colorize'
 end

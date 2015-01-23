@@ -1,4 +1,4 @@
-require 'find'
+require 'colorize'
 
 class Fack
   def help
@@ -6,7 +6,9 @@ class Fack
   end
 
   def print_check(a, b)
-    puts a if a.include? b
+    if a.include? b
+      puts a.gsub(/#{b}/, b.colorize(:red))
+    end
   end
 
   def print_find(start, file)
