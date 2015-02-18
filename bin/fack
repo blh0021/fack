@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 require 'fack'
 fack = Fack.new
+
+fack.ignore = ARGV.include?("-i") ? true:false
+ARGV.delete_if{ |x| x=="-i"}
+
 if (ARGV.size < 1)
   fack.help
 else
